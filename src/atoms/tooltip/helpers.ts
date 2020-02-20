@@ -121,7 +121,6 @@ const returnNumber = (value: number) => (isNaN(value) ? 0 : value);
 
 export const computeTooltipWidth = (
   tooltipStyle: CSSStyleDeclaration,
-  placement: Placement,
   alternativeWidth: string | null
 ) => {
   const width =
@@ -135,7 +134,6 @@ export const computeTooltipWidth = (
 
 export const computeTooltipHeight = (
   tooltipStyle: CSSStyleDeclaration,
-  placement: Placement,
   alternativeHeight: string | null
 ) => {
   const height =
@@ -143,7 +141,6 @@ export const computeTooltipHeight = (
     parseInt(tooltipStyle.paddingBottom || '0', 10) +
     parseInt(tooltipMargin, 10) +
     parseInt(alternativeHeight || tooltipStyle.height || '0', 10);
-
   return returnNumber(height);
 };
 
@@ -165,7 +162,7 @@ export const checkIsStyleComputed = (style: CSSStyleDeclaration) => {
   );
 };
 
-export const getCSSComputedStyle = (ref: EventTarget | null) =>
+export const getCSSComputedStyle = (ref: Element | null) =>
   window.getComputedStyle(ref as Element, ':before');
 
 export const getBoundingRect = (element: EventTarget | null): ClientRect => {
@@ -205,7 +202,7 @@ export const getAlternativeStyle = (
   return { height: height.toString(), width: width.toString() };
 };
 
-const getContainerBoundaries = (container: Element | Window) => {
+export const getContainerBoundaries = (container: Element | Window) => {
   if (container === window) {
     return {
       maxHeight: window.innerHeight,
