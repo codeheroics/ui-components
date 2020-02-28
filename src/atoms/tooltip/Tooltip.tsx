@@ -177,7 +177,7 @@ class Tooltip extends React.PureComponent<Props, State> {
       );
       this.setState({ placement: placement });
     } catch (e) {
-      console.error(e);
+      console.error('Error while computing DropdownMenu position', e);
     }
   }
 
