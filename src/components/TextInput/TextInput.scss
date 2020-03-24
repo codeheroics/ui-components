@@ -1,0 +1,81 @@
+@use '../../colors/colors';
+@use '../../typography/typography';
+
+/* remove edge decorators */
+::-ms-clear {
+  display: none;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .input {
+    /* typography */
+    @include typography.body-medium;
+
+    /* colors */
+    color: colors.$black;
+    background: colors.$white;
+
+    /* geometry */
+    padding: 0 16px;
+    height: 40px;
+    outline: none;
+    display: flex;
+    align-items: center;
+
+    /* border */
+    border: 1px solid colors.$dash-green-03;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: colors.$mid-green-00;
+    }
+
+    &.warning,
+    &.input:focus.warning {
+      border-color: colors.$orange-00;
+    }
+
+    &.error,
+    &.input:focus.error {
+      border-color: colors.$functional-red-02;
+    }
+
+    &:disabled {
+      background: colors.$dash-green-06;
+      border-color: colors.$dash-green-05;
+      color: colors.$dash-green-03;
+    }
+
+    &:read-only {
+      background: colors.$dash-green-06;
+      border: 1px solid colors.$dash-green-05;
+    }
+
+    &::placeholder {
+      color: colors.$dash-green-03;
+    }
+
+    &::-ms-input-placeholder {
+      color: colors.$dash-green-03;
+    }
+
+    .feedback {
+      @include typography.body-small;
+      color: colors.$black;
+      margin-top: 4px;
+    }
+
+    .feedback.warning {
+      color: colors.$orange-00;
+    }
+
+    .feedback.error {
+      color: colors.$functional-red-02;
+    }
+  }
+}
