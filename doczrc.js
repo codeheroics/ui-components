@@ -12,6 +12,13 @@ export default {
   hashRouter: true,
   base: '/ui-components/',
   modifyBundlerConfig: config => {
+    const rules = [
+      {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      }
+    ];
+    config.module.rules.push(...rules);
     config.resolve.plugins = [new TsConfigPathsPlugin()];
     return config;
   },
