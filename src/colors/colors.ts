@@ -66,5 +66,11 @@ export const white = '#FFFFFF';
 /* -- VALIDATOR_GREEN -- */
 export const validatorGreen = '#20B422';
 
+/* -- ACCESSIBLE_VALIDATOR_GREEN -- */
+export const accessibleValidatorGreen = '#278637';
+
+/* -- ACCESSIBLE_VALIDATOR_RED -- */
+export const accessibleValidatorRed = '#e00635';
+
 /* -- TRANSPARENT -- */
 export const transparent = 'transparent';

@@ -1,0 +1,48 @@
+@use '../../colors/colors';
+@use '../../typography/typography';
+
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.root.success {
+  background-color: colors.$accessible-validator-green;
+}
+
+.root.error {
+  background-color: colors.$accessible-validator-red;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.description {
+  @include typography.body-small;
+  color: colors.$white;
+  font-size: 18px;
+  line-height: 20px;
+  padding-left: 20px;
+}
+
+.icon {
+  padding-left: 20px;
+}
+
+.closeIcon {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:hover:not(:disabled), &:focus:not(:disabled) {
+    border: 1px solid transparent;
+    background-color: transparent;
+  }
+}
