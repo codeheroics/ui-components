@@ -1,6 +1,6 @@
 # UI Components
 
-This library contains Dashlane's reusable ui components built with React 🎉
+This library contains Dashlane's reusable ui components built with React 🎉 https://dashlane.github.io/ui-components/
 
 ## Getting Started
 
@@ -50,14 +50,15 @@ const App: React.FC = () => {
 export default App;
 ```
 
-## Usage guide
+## Live documentation
 
 All the available components offered by this library are described [here](https://dashlane.github.io/ui-components/). Feel free to navigate through them and to live test the behaviour of each.
 
 ## Built With
 
 - [React](https://reactjs.org/) - The javascript library
-- [Styled-Components](https://www.styled-components.com/) - Used to create styled React components with an improved experience for developers
+- \[OBSOLETE\] [Styled-Components](https://www.styled-components.com/) - Used to create styled React components with an improved experience for developers
+- [Sass](https://sass-lang.com/) - Used to add style with an improved developer experience
 - [Yarn](https://yarnpkg.com/lang/en/docs/) - Dependency Management
 
 ## Contributing
