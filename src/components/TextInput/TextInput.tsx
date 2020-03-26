@@ -17,12 +17,22 @@ const classNameFromFeedbackType: Record<TextInputFeedbackType, string> = {
   warning: 'warning'
 };
 
-const getClassNameFromFeedbackType = (feedbackType?: TextInputFeedbackType) => {
+const getClassNameFromFeedbackType = (
+  feedbackType?: TextInputFeedbackType
+): string => {
   return feedbackType ? classNameFromFeedbackType[feedbackType] : '';
 };
 
-const shouldShowFeedback = ({ feedbackText, feedbackType }: TextInputProps) => {
-  return feedbackText && feedbackType;
+const shouldShowFeedback = ({
+  feedbackText,
+  feedbackType
+}: TextInputProps): boolean => {
+  return (
+    feedbackType !== undefined &&
+    feedbackText !== undefined &&
+    feedbackText !== null &&
+    feedbackText.length > 0
+  );
 };
 
 export const TextInput: React.FC<TextInputProps> = props => {
