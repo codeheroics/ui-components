@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextInput> Global render should render default 1`] = `
+<Component>
+  <div
+    className="root "
+  >
+    <input
+      className="input "
+      type="text"
+    />
+  </div>
+</Component>
+`;
+
+exports[`<TextInput> Global render should render disabled 1`] = `
+<Component
+  disabled={true}
+>
+  <div
+    className="root "
+  >
+    <input
+      className="input "
+      disabled={true}
+      type="text"
+    />
+  </div>
+</Component>
+`;
+
+exports[`<TextInput> Global render should render error 1`] = `
+<Component
+  feedbackType="error"
+>
+  <div
+    className="root error"
+  >
+    <input
+      className="input error"
+      feedbackType="error"
+      type="text"
+    />
+  </div>
+</Component>
+`;
+
+exports[`<TextInput> Global render should render placeholder 1`] = `
+<Component
+  placeholder="placeholder"
+>
+  <div
+    className="root "
+  >
+    <input
+      className="input "
+      placeholder="placeholder"
+      type="text"
+    />
+  </div>
+</Component>
+`;
+
+exports[`<TextInput> Global render should render warning 1`] = `
+<Component
+  feedbackType="warning"
+>
+  <div
+    className="root warning"
+  >
+    <input
+      className="input warning"
+      feedbackType="warning"
+      type="text"
+    />
+  </div>
+</Component>
+`;

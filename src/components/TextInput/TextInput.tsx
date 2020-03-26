@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
+import * as React from 'react';
 import './TextInput.css';
 
-type TextInputFeedbackType = 'error' | 'success' | 'warning';
+type TextInputFeedbackType = 'error' | 'warning';
 
 type _ForbiddenProps = 'size' | 'prefix' | 'type';
 
@@ -14,7 +14,6 @@ interface TextInputProps
 
 const classNameFromFeedbackType: Record<TextInputFeedbackType, string> = {
   error: 'error',
-  success: 'success',
   warning: 'warning'
 };
 
@@ -26,7 +25,7 @@ const shouldShowFeedback = ({ feedbackText, feedbackType }: TextInputProps) => {
   return feedbackText && feedbackType;
 };
 
-export const TextInput: FC<TextInputProps> = props => {
+export const TextInput: React.FC<TextInputProps> = props => {
   const className = getClassNameFromFeedbackType(props.feedbackType);
 
   return (
