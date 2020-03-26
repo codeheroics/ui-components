@@ -14,6 +14,7 @@ module.exports = {
     '^@ions/(.*)$': '<rootDir>/src/ions/$1',
     '@ions': '<rootDir>/src/ions/index',
     '@colors': '<rootDir>/src/colors/colors.ts',
-    '@colors/*': '<rootDir>/src/colors/*'
+    '@colors/*': '<rootDir>/src/colors/*',
+    '\\.(css|less)$': 'identity-obj-proxy'
   }
 };
