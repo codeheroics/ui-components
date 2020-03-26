@@ -33,5 +33,13 @@ describe('<TextInput>', () => {
 
       expect(textInput).toMatchSnapshot();
     });
+
+    it('should render warning and show feedback text', () => {
+      const textInput = mount(
+        <TextInput feedbackType='warning' feedbackText='warning' />
+      );
+
+      expect(textInput).toMatchSnapshot();
+    });
   });
 });

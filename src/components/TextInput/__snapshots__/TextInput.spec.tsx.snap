@@ -38,7 +38,6 @@ exports[`<TextInput> Global render should render error 1`] = `
   >
     <input
       className="input error"
-      feedbackType="error"
       type="text"
     />
   </div>
@@ -70,9 +69,29 @@ exports[`<TextInput> Global render should render warning 1`] = `
   >
     <input
       className="input warning"
-      feedbackType="warning"
       type="text"
     />
+  </div>
+</Component>
+`;
+
+exports[`<TextInput> Global render should render warning and show feedback text 1`] = `
+<Component
+  feedbackText="warning"
+  feedbackType="warning"
+>
+  <div
+    className="root warning"
+  >
+    <input
+      className="input warning"
+      type="text"
+    />
+    <span
+      className="feedback warning"
+    >
+      warning
+    </span>
   </div>
 </Component>
 `;

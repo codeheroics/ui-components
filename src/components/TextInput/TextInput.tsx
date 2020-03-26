@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { getClassNames } from '@utility/cssUtils';
 import './TextInput.css';
 
 type TextInputFeedbackType = 'error' | 'warning';
@@ -37,12 +38,19 @@ const shouldShowFeedback = ({
 
 export const TextInput: React.FC<TextInputProps> = props => {
   const className = getClassNameFromFeedbackType(props.feedbackType);
+  const { feedbackText, feedbackType, ...htmlInputProps } = props;
 
   return (
     <div className={'root ' + className}>
-      <input {...props} className={'input ' + className} type='text' />
+      <input
+        {...htmlInputProps}
+        className={getClassNames('input', className)}
+        type='text'
+      />
       {shouldShowFeedback(props) ? (
-        <span className={'feedback ' + className}>{props.feedbackText}</span>
+        <span className={getClassNames('feedback', className)}>
+          {feedbackText}
+        </span>
       ) : null}
     </div>
   );
