@@ -1,6 +1,7 @@
 import compiler from '@ampproject/rollup-plugin-closure-compiler';
 import typescript from 'rollup-plugin-typescript2';
 import json from 'rollup-plugin-json';
+import postcss from 'rollup-plugin-postcss';
 import pkg from './package.json';
 
 const config = {
@@ -15,7 +16,12 @@ const config = {
       typescript: require('typescript'),
       objectHashIgnoreUnknownHack: true
     }),
-    json({ preferConst: true })
+    json({ preferConst: true }),
+    postcss({
+      extract: false,
+      modules: true,
+      use: ['sass']
+    })
   ],
   output: [{ file: pkg.module, format: 'esm', sourcemap: true }]
 };
