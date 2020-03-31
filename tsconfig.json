@@ -20,6 +20,8 @@
       "@ions/*": ["ions/*"],
       "@icons": ["icons/index"],
       "@icons/*": ["icons/*"],
+      "@components": ["components/index"],
+      "@components/*": ["components/*"],
       "@colors": ["colors/colors"],
       "@colors/*": ["colors/*"],
       "@typings/*": ["typings/*"],
