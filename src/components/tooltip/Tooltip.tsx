@@ -1,14 +1,14 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { white } from '@colors';
-import { Placement } from '@atoms/tooltip/types';
+import { Placement } from '@components/tooltip/types';
 import {
   displayIfInContainer,
   getTooltipBgColorByType,
   handleTooltipArrowPosition,
   handleTooltipPosition,
   isTooltipOutOfContainer
-} from '@atoms/tooltip/helpers';
+} from '@components/tooltip/helpers';
 import {
   getBoundingRect,
   getContainerBoundaries,

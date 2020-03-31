@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Tooltip from '@atoms/tooltip/Tooltip';
+import Tooltip from '@components/tooltip/Tooltip';
 
 interface Props {
   item: number;
