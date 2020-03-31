@@ -1,6 +1,6 @@
 import * as React from 'react';
-import DropdownMenu from '@atoms/dropdownMenu/DropdownMenu';
 import { Button, Tooltip } from '@atoms';
+import { DropdownMenu } from '@components';
 import styled from 'styled-components';
 import { dashGreen00 } from '@colors';
 
