@@ -10,10 +10,23 @@ export interface Props {
    */
   title?: string;
   /**
-   * The icon size in px
+   * The icon size in px, determines the icon width and height
+   * Takes precendence over the "width" and "height" props
    * @default 20px
    */
   size?: number;
+  /**
+   * The icon width in px
+   * Used when "size" has no value
+   * @default 20px
+   */
+  width?: number;
+  /**
+   * The icon height in px
+   * Used when "size" has no value
+   * @default 20px
+   */
+  height?: number;
   /**
    * A disabled state for the icon wrapper
    * @default false
