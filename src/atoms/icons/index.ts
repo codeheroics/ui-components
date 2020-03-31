@@ -45,3 +45,4 @@ export { default as CopyPasswordIcon } from './CopyPasswordIcon';
 export { default as EditIcon } from './EditIcon';
 export { default as LogoIcon } from './LogoIcon';
 export { default as SettingsIcon } from './SettingsIcon';
+export { default as LinkIcon } from './LinkIcon';
