@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { getClassNames } from '@utility/cssUtils';
-import './TextInput.css';
+import style from './TextInput.module.scss';
 
 type TextInputFeedbackType = 'error' | 'warning';
 
@@ -18,38 +17,28 @@ const classNameFromFeedbackType: Record<TextInputFeedbackType, string> = {
   warning: 'warning'
 };
 
-const getClassNameFromFeedbackType = (
-  feedbackType?: TextInputFeedbackType
-): string => {
+const getClassNameFromFeedbackType = (feedbackType?: TextInputFeedbackType) => {
   return feedbackType ? classNameFromFeedbackType[feedbackType] : '';
 };
 
-const shouldShowFeedback = ({
-  feedbackText,
-  feedbackType
-}: TextInputProps): boolean => {
-  return (
-    feedbackType !== undefined &&
-    feedbackText !== undefined &&
-    feedbackText !== null &&
-    feedbackText.length > 0
-  );
+const shouldShowFeedback = ({ feedbackText, feedbackType }: TextInputProps) => {
+  return feedbackText && feedbackType;
 };
 
 export const TextInput: React.FC<TextInputProps> = props => {
   const className = getClassNameFromFeedbackType(props.feedbackType);
-  const { feedbackText, feedbackType, ...htmlInputProps } = props;
+  const styledClassName = style[className] ? style[className] : '';
 
   return (
-    <div className={'root ' + className}>
+    <div className={`${style.root} ${styledClassName}`}>
       <input
-        {...htmlInputProps}
-        className={getClassNames('input', className)}
+        {...props}
+        className={`${style.input} ${styledClassName}`}
         type='text'
       />
       {shouldShowFeedback(props) ? (
-        <span className={getClassNames('feedback', className)}>
-          {feedbackText}
+        <span className={`${style.feedback} ${styledClassName}`}>
+          {props.feedbackText}
         </span>
       ) : null}
     </div>

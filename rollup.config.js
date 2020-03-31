@@ -1,8 +1,10 @@
+import postcss from 'rollup-plugin-postcss';
 import compiler from '@ampproject/rollup-plugin-closure-compiler';
 import typescript from 'rollup-plugin-typescript2';
 import json from 'rollup-plugin-json';
-import postcss from 'rollup-plugin-postcss';
 import pkg from './package.json';
+
+import autoprefixer from 'autoprefixer';
 
 const config = {
   input: 'src/index.ts',
@@ -12,16 +14,15 @@ const config = {
     ...Object.keys(pkg.peerDependencies || {})
   ],
   plugins: [
+    postcss({
+      extract: false,
+      plugins: [autoprefixer()]
+    }),
     typescript({
       typescript: require('typescript'),
       objectHashIgnoreUnknownHack: true
     }),
-    json({ preferConst: true }),
-    postcss({
-      extract: false,
-      modules: true,
-      use: ['sass']
-    })
+    json({ preferConst: true })
   ],
   output: [{ file: pkg.module, format: 'esm', sourcemap: true }]
 };

@@ -25,6 +25,7 @@
       "@components/*": ["components/*"],
       "@colors": ["colors/colors"],
       "@colors/*": ["colors/*"],
+      "@theming/*": ["themes/*"],
       "@typings/*": ["typings/*"],
       "@utility/*": ["utility/*"],
       "@design-tokens/*": ["design-tokens/*"]

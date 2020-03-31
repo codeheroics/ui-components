@@ -1,6 +1,8 @@
 module.exports = {
   roots: ['<rootDir>/src'],
   transform: {
+    '.+\\.(css|styl|less|sass|scss)$':
+      '<rootDir>/node_modules/jest-css-modules-transform',
     '^.+\\.tsx?$': 'ts-jest'
   },
   snapshotSerializers: ['enzyme-to-json/serializer'],
@@ -14,7 +16,6 @@ module.exports = {
     '^@ions/(.*)$': '<rootDir>/src/ions/$1',
     '@ions': '<rootDir>/src/ions/index',
     '@colors': '<rootDir>/src/colors/colors.ts',
-    '@colors/*': '<rootDir>/src/colors/*',
-    '\\.(css|less)$': 'identity-obj-proxy'
+    '@colors/*': '<rootDir>/src/colors/*'
   }
 };

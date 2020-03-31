@@ -63,19 +63,19 @@
     &::-ms-input-placeholder {
       color: colors.$dash-green-03;
     }
+  }
 
-    .feedback {
-      @include typography.body-small;
-      color: colors.$black;
-      margin-top: 4px;
-    }
+  .feedback {
+    @include typography.body-small;
+    color: colors.$black;
+    margin-top: 4px;
+  }
 
-    .feedback.warning {
-      color: colors.$orange-00;
-    }
+  .feedback.warning {
+    color: colors.$orange-00;
+  }
 
-    .feedback.error {
-      color: colors.$functional-red-02;
-    }
+  .feedback.error {
+    color: colors.$functional-red-02;
   }
 }
