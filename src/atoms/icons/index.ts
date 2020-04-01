@@ -1,4 +1,7 @@
 /*-- EXPORT ICON COMPONENTS --*/
+export { default as LinkIcon } from './LinkIcon';
+export { default as SettingsIcon } from './SettingsIcon';
+export { default as LogoIcon } from './LogoIcon';
 export { default as TaxIcon } from './TaxIcon';
 export { default as UnlockIcon } from './UnlockIcon';
 export { default as LockIcon } from './LockIcon';
@@ -43,6 +46,3 @@ export { default as HideIcon } from './HideIcon';
 export { default as RevealIcon } from './RevealIcon';
 export { default as CopyPasswordIcon } from './CopyPasswordIcon';
 export { default as EditIcon } from './EditIcon';
-export { default as LogoIcon } from './LogoIcon';
-export { default as SettingsIcon } from './SettingsIcon';
-export { default as LinkIcon } from './LinkIcon';
