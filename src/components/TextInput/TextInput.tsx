@@ -12,22 +12,16 @@ interface TextInputProps
   feedbackText?: string;
 }
 
-const classNameFromFeedbackType: Record<TextInputFeedbackType, string> = {
-  error: 'error',
-  warning: 'warning'
-};
-
-const getClassNameFromFeedbackType = (feedbackType?: TextInputFeedbackType) => {
-  return feedbackType ? classNameFromFeedbackType[feedbackType] : '';
-};
-
 const shouldShowFeedback = ({ feedbackText, feedbackType }: TextInputProps) => {
   return feedbackText && feedbackType;
 };
 
 export const TextInput: React.FC<TextInputProps> = props => {
-  const className = getClassNameFromFeedbackType(props.feedbackType);
-  const styledClassName = style[className] ? style[className] : '';
+  const styledClassName = props.feedbackType
+    ? style[props.feedbackType]
+      ? style[props.feedbackType]
+      : ''
+    : '';
 
   return (
     <div className={`${style.root} ${styledClassName}`}>

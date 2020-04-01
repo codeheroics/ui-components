@@ -21,7 +21,7 @@ export default {
     css({
       preprocessor: 'sass',
       loaderOpts: {
-        implementation: require('sass') // We want to force the use of 'sass' (dart-sass) and not 'node-sass'
+        implementation: require('node-sass') // Be aware, node-sass here is an alias to dart-sass
       },
       cssmodules: true
     })
