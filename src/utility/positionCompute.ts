@@ -1,5 +1,5 @@
-import { Placement as TooltipPlacement } from '@atoms/tooltip/types';
-import { Placement as DropdownPlacement } from '@atoms/dropdownMenu/types';
+import { Placement as TooltipPlacement } from '@components/tooltip/types';
+import { Placement as DropdownPlacement } from '@components/dropdown/types';
 /** Both tooltips and dropdown use the DOM to make sure
  * they are fitting in a container
  */

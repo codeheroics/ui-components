@@ -1,5 +1,5 @@
 import * as React from 'react';
-import DropdownCard from '@ions/dropdown/card/DropdownCard';
+import DropdownCard from './subcomponents/DropdownCard';
 import styled from 'styled-components';
 import { DockingSide, Placement } from './types';
 import {

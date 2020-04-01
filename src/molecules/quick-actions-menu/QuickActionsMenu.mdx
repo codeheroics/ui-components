@@ -6,7 +6,7 @@ menu: Components
 import { Playground, Props } from 'docz';
 import Button from '../../atoms/button/Button';
 import MoreIcon from '../../atoms/icons/MoreIcon';
-import DropdownElement from '../../ions/dropdown/element/DropdownElement.tsx';
+import DropdownElement from '../../components/dropdown/DropdownElement.tsx';
 import QuickActionsMenu from './QuickActionsMenu';
 
 # Quick Actions Menu
@@ -32,10 +32,10 @@ check out the [Dropdown Menu component](./src-atoms-button-button).
 >
   {() => {
     const [isOpen, setIsOpen] = React.useState(false);
-    const onClick = (e) => {
+    const onClick = e => {
       e.preventDefault();
       setIsOpen(!isOpen);
-    }
+    };
     return (
       <QuickActionsMenu
         icon={<MoreIcon />}
