@@ -17,11 +17,10 @@ const shouldShowFeedback = ({ feedbackText, feedbackType }: TextInputProps) => {
 };
 
 export const TextInput: React.FC<TextInputProps> = props => {
-  const styledClassName = props.feedbackType
-    ? style[props.feedbackType]
+  const styledClassName =
+    props.feedbackType && style[props.feedbackType]
       ? style[props.feedbackType]
-      : ''
-    : '';
+      : '';
 
   return (
     <div className={`${style.root} ${styledClassName}`}>
