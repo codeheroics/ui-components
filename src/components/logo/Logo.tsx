@@ -1,10 +1,11 @@
 import * as React from 'react';
 import SvgWrapper from '@ions/icon/wrapper/SvgWrapper';
+import { IconProps } from '@ions/icon/types';
 
-const LogoIcon: React.FunctionComponent<
-  import('../../ions/icon/types').IconProps
-> = (props: import('../../ions/icon/types').IconProps): JSX.Element => (
-  <SvgWrapper {...props}>
+const Logo: React.FunctionComponent<IconProps> = (
+  props: IconProps
+): JSX.Element => (
+  <SvgWrapper viewBox='0 0 110 17' {...props}>
     <React.Fragment>
       <path
         fillRule='evenodd'
@@ -15,4 +16,4 @@ const LogoIcon: React.FunctionComponent<
   </SvgWrapper>
 );
 
-export default LogoIcon;
+export default Logo;
