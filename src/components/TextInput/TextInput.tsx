@@ -1,5 +1,5 @@
 import * as React from 'react';
-import style from './TextInput.module.scss';
+import * as style from './TextInput.module.scss';
 
 type TextInputFeedbackType = 'error' | 'warning';
 

@@ -6,7 +6,6 @@
     "jsx": "react",
     "moduleResolution": "node",
     "strictNullChecks": true,
-    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "noImplicitAny": true,
     "strict": true,
