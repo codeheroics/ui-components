@@ -19,6 +19,8 @@ export { default as IdIcon } from './IdIcon';
 export { default as MobileIcon } from './MobileIcon';
 export { default as HelpIcon } from './HelpIcon';
 export { default as PersonalInfoIcon } from './PersonalInfoIcon';
+export { default as CrossCircleIcon } from './CrossCircleIcon';
+export { default as CheckCircleIcon } from './CheckCircleIcon';
 export { default as InfoCircleIcon } from './InfoCircleIcon';
 export { default as PasswordsIcon } from './PasswordsIcon';
 export { default as PasswordHistoryIcon } from './PasswordHistoryIcon';

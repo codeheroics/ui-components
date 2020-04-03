@@ -1,0 +1,52 @@
+---
+name: Alert
+menu: Components
+---
+
+import { Playground, Props } from 'docz';
+import { Alert } from './Alert';
+
+# Alert
+
+An alert component
+
+## Properties
+
+<Props of={Alert} />
+
+## Usage
+
+### Basic usage
+
+Examples below show usage of the Alert
+
+<Playground
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start'
+  }}
+>
+  <div style={{ marginBottom: '10px'}}>
+    <Alert severity="success">This is a success message!</Alert>
+  </div>
+
+<div style={{ marginBottom: '10px' }}>
+  <Alert severity='success' showCloseIcon={true}>
+    This is a success message!
+  </Alert>
+</div>
+
+<div style={{ marginBottom: '10px' }}>
+  <Alert severity='success' showIcon={false}>
+    This is a success message!
+  </Alert>
+</div>
+
+<div style={{ marginBottom: '10px' }}>
+  <Alert severity='error' showCloseIcon={true}>
+    Something went wrong.
+  </Alert>
+</div>
+
+</Playground>
