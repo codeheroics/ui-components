@@ -1,6 +1,7 @@
 module.exports = {
   roots: ['<rootDir>/src'],
   transform: {
+    '.+\\.(css|styl|less|sass|scss)$': 'jest-css-modules-transform',
     '^.+\\.tsx?$': 'ts-jest'
   },
   snapshotSerializers: ['enzyme-to-json/serializer'],

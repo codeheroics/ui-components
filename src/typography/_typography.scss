@@ -1,0 +1,15 @@
+@mixin body-medium {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin body-small {
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
