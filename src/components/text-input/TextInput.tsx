@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as style from './TextInput.module.scss';
+import styles from './TextInput.module.scss';
 
 type TextInputFeedbackType = 'error' | 'warning';
 
@@ -18,19 +18,19 @@ const shouldShowFeedback = ({ feedbackText, feedbackType }: TextInputProps) => {
 
 export const TextInput: React.FC<TextInputProps> = props => {
   const styledClassName =
-    props.feedbackType && style[props.feedbackType]
-      ? style[props.feedbackType]
+    props.feedbackType && styles[props.feedbackType]
+      ? styles[props.feedbackType]
       : '';
 
   return (
-    <div className={`${style.root} ${styledClassName}`}>
+    <div className={`${styles.root} ${styledClassName}`}>
       <input
         {...props}
-        className={`${style.input} ${styledClassName}`}
+        className={`${styles.input} ${styledClassName}`}
         type='text'
       />
       {shouldShowFeedback(props) ? (
-        <span className={`${style.feedback} ${styledClassName}`}>
+        <span className={`${styles.feedback} ${styledClassName}`}>
           {props.feedbackText}
         </span>
       ) : null}
