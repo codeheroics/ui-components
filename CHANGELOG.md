@@ -1,3 +1,35 @@
+# [1.5.0](https://github.com/Dashlane/ui-components/compare/v1.4.1...v1.5.0) (2020-04-03)
+
+
+### Bug Fixes
+
+* cleaning dependencies ([21ce4ac](https://github.com/Dashlane/ui-components/commit/21ce4acfb5c8368f27e10dcdc00b1d730d3f7580))
+* fix manually generated family icons ([0bad061](https://github.com/Dashlane/ui-components/commit/0bad06100a95f6bb4ae3ce05cfcbad8576fbf788))
+* move logo to components ([7a7f5b8](https://github.com/Dashlane/ui-components/commit/7a7f5b80586bc8f7640119a30c8337e4c0a5490c))
+* removed unused dependencies & cleaned code ([780b7a4](https://github.com/Dashlane/ui-components/commit/780b7a4b896e9ef8e4b2f5bf527dd2e0d9a25058))
+
+
+### Features
+
+* [tsconfig.json] add components to paths ([6ebcc45](https://github.com/Dashlane/ui-components/commit/6ebcc451a868ea51097a5058c599e5e51aed6633))
+* add Dashlane logo ([39acbf0](https://github.com/Dashlane/ui-components/commit/39acbf014a0c72e919add4ae1137a499b5a66309))
+* add getClassNames utility function ([250ab3b](https://github.com/Dashlane/ui-components/commit/250ab3bba3c9c636ccc857bac51adb3b0149011a))
+* add link icon ([3c84e56](https://github.com/Dashlane/ui-components/commit/3c84e566c409d885b6094c18491ae63fcf007f2a))
+* add reactjs + ts + sass input ([969e99b](https://github.com/Dashlane/ui-components/commit/969e99b0800c821be830ac98d147eca17babd0c1))
+* add settings icon ([c3dac73](https://github.com/Dashlane/ui-components/commit/c3dac73dad4697871381cc363cae4898de9d17ea))
+* add snapshot tests for TextInput ([f7bda72](https://github.com/Dashlane/ui-components/commit/f7bda726ba42d9edcfd62551f44f942ef7c1b966))
+* add support for css in jest ([25921b8](https://github.com/Dashlane/ui-components/commit/25921b81282a6173ed4a8fce7abf13a484ac27c8))
+* add support for sass ([ef4a089](https://github.com/Dashlane/ui-components/commit/ef4a089d57f7591ed5b077da1812abbf59119611))
+* add support for synthetic default imports ([f088996](https://github.com/Dashlane/ui-components/commit/f088996affe11af1fff408541bf5556836edc051))
+* add typography and move colors ([02e9592](https://github.com/Dashlane/ui-components/commit/02e9592ef05eb9bcd5f081e7fded2eafa73d3ce1))
+* alert - success and error ([db3066b](https://github.com/Dashlane/ui-components/commit/db3066bb6da1baf15b260f4c41ab8682639b296a))
+* better typing for TextInput helpers ([b8ab963](https://github.com/Dashlane/ui-components/commit/b8ab963fe8d4525727894b7c169721957d50e4ac))
+* fix test for TextInput props ([bd6d22d](https://github.com/Dashlane/ui-components/commit/bd6d22da114359c3996577da3727cb2498823b77))
+* fix typo for DropdownElement ([28f8260](https://github.com/Dashlane/ui-components/commit/28f826027eafb257e95d1e0b7ab19c8a5097a2c5))
+* integrate css support in rollup config ([5ffa34b](https://github.com/Dashlane/ui-components/commit/5ffa34bb8bac51ddcdee46975e1ebe6a507b39c5))
+* scss modules support complete ([11239af](https://github.com/Dashlane/ui-components/commit/11239afe5720c7ffe83391e403138bc6bda46591))
+* support non-square icons ([bd72b4a](https://github.com/Dashlane/ui-components/commit/bd72b4ae96069c3e8341ea79492721c0ca1fa94d))
+
 ## [1.4.1](https://github.com/Dashlane/ui-components/compare/v1.4.0...v1.4.1) (2020-03-17)
 
 
