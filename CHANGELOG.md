@@ -1,3 +1,13 @@
+# [1.6.0](https://github.com/Dashlane/ui-components/compare/v1.5.0...v1.6.0) (2020-04-06)
+
+
+### Features
+
+* add EditorConfig to project ([387fe74](https://github.com/Dashlane/ui-components/commit/387fe745d9a15bb9fa511153404bfcbf7319ab87))
+* add missing prettier plugin to eslintrc.json ([6c61f04](https://github.com/Dashlane/ui-components/commit/6c61f04e6ce311ff58b348d5ef6a407e5c8f12b0))
+* update CONTRIBUTING.md about IDE plugins ([c1e13dc](https://github.com/Dashlane/ui-components/commit/c1e13dcc89d3364f0020779e7d9bc8532babd5a3))
+* use unified tabWidth for prettier autoformat ([c93a39b](https://github.com/Dashlane/ui-components/commit/c93a39ba6cae24284325184509a9c121769e9343))
+
 # [1.5.0](https://github.com/Dashlane/ui-components/compare/v1.4.1...v1.5.0) (2020-04-03)
 
 
