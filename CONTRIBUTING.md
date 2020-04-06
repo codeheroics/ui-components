@@ -103,11 +103,17 @@ All you need to do is :
 
 ### Code linting and formatting
 
-We use `prettier` to format and `eslint` with typescript settings to lint our code.
+We use `prettier` to format and `eslint` with typescript settings to lint our code. Your IDE should also be able to respect the rules defined with `EditorConfig`.
 
 ### Good to know :
 
-- It's convenient to configure your ide in order automatically format your files. Please follow this [Editor Integration documentation](https://prettier.io/docs/en/editors.html).
+- It's convenient to configure your IDE in order to automatically format your files. Please follow this [Prettier Editor Integration documentation](https://prettier.io/docs/en/editors.html).
+
+- To ensure your IDE is already correctly configured, we use [EditorConfig](https://editorconfig.org/). Please install the required plugin for it, if your IDE needs one:
+
+  - [VSCode plugin](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+  - [Vim plugin](https://github.com/editorconfig/editorconfig-vim)
+  - WebStorm supports it natively.
 
 - Otherwise, we have a yarn task that formats your <strong>git staged files</strong> for you. You can simply run `yarn pretty-quick`
 
