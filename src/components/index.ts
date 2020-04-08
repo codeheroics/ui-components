@@ -6,3 +6,6 @@ export { TextInput } from './text-input/TextInput';
 export { Alert } from './alert/Alert';
 export { AlertSeverity } from './alert/types';
 export * from './tooltip/types';
+export {
+  default as QuickActionsMenu
+} from './quick-actions-menu/QuickActionsMenu';
