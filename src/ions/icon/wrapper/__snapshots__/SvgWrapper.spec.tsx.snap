@@ -16,7 +16,7 @@ exports[`<SvgIcon> global render should render 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "cCEOKG",
+            "lastClassName": "exeUui",
             "rules": Array [
               "
   display: flex;
@@ -66,7 +66,7 @@ exports[`<SvgIcon> global render should render 1`] = `
       forwardedRef={null}
     >
       <svg
-        className="sc-bdVaJa cCEOKG"
+        className="sc-bdVaJa exeUui"
         version="1.1"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"

@@ -16,7 +16,7 @@ describe('<Icon>', () => {
         const IconWrapper = mount(<Icon />);
 
         expect(IconWrapper).toHaveStyleRule('fill', 'inherit');
-        expect(IconWrapper).toHaveStyleRule('cursor', 'pointer');
+        expect(IconWrapper).toHaveStyleRule('cursor', 'inherit');
         expect(IconWrapper).toHaveStyleRule('width', '20px');
         expect(IconWrapper).toHaveStyleRule('height', '20px');
       });
