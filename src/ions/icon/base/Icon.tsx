@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Props as IconProps } from '@ions/icon/types';
+import { dashGreen00 } from '@colors';
 
 export type ColorProps = 'color' | 'hoverColor' | 'activeColor';
 interface Props extends Omit<IconProps, 'title' | 'children'> {
@@ -9,7 +10,7 @@ interface Props extends Omit<IconProps, 'title' | 'children'> {
 const getWidth = ({ width, size }: Props) => `${size || width || 20}px`;
 const getHeight = ({ height, size }: Props) => `${size || height || 20}px`;
 const getColor = (propName: ColorProps = 'color') => (props: Props): string =>
-  props.animated ? 'none' : props[propName] || props['color'] || 'inherit';
+  props.animated ? 'none' : props[propName] || props['color'] || dashGreen00;
 
 const Icon = styled.svg.attrs<Props>(({ viewBox }: Props) => ({
   viewBox: viewBox || '0 0 20 20',

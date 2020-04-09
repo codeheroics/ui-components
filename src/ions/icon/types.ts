@@ -34,17 +34,17 @@ export interface Props {
   disabled?: boolean;
   /**
    * The icon color
-   * @default 'inherit' (parent's fill property)
+   * @default dashGreen00 (dashlane default dark green)
    */
   color?: string;
   /**
    * The icon color when hovered
-   * @default  'inherit' (parent's fill property)
+   * @default dashGreen00 (dashlane default dark green)
    */
   hoverColor?: string;
   /**
    * The icon color when active
-   * @default 'inherit' (parent's fill property)
+   * @default dashGreen00 (dashlane default dark green)
    */
   activeColor?: string;
   /**
