@@ -19,7 +19,7 @@ const Icon = styled.svg.attrs<Props>(({ viewBox }: Props) => ({
   display: flex;
   width: ${getWidth};
   height: ${getHeight};
-  cursor: ${({ disabled }): string => (disabled ? 'not-allowed' : 'pointer')};
+  cursor: ${({ disabled }): string => (disabled ? 'not-allowed' : 'inherit')};
   outline: none;
   border-radius: 4px;
   fill: ${getColor()};
